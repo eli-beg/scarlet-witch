@@ -13,17 +13,21 @@ header {
   height: 100vh;
   max-width: 100%;
 }
-section {
+#overview {
   width: auto;
   max-width: 100%;
   height: auto;
   margin: 0px 40px;
 }
 
-h2 {
+#overview h2 {
   padding: 70px 0px 20px 30px;
 }
 
+#attributes h2 {
+  padding: 70px 0px 20px 30px;
+  color: white;
+}
 /* nav bar------------------------------------------------- */
 
 .nav-bar {
@@ -178,9 +182,6 @@ dd a {
 
 /* ------------------------------------------------ */
 
-.contain-section-container-overview {
-  margin-top: 30px;
-}
 #overview-paragraphs h3 {
   margin-bottom: 10px;
 }
@@ -196,4 +197,71 @@ dd a {
 .overview-sub-section h4 {
   margin-bottom: 10px;
   font-style: italic;
+}
+
+/* attributes ---------------------------- */
+#attributes {
+  background-color: #202020;
+}
+#attributes-subsection {
+  display: flex;
+  justify-content: center;
+  color: #4b4b4e;
+  width: 320px;
+  height: 500px;
+  border-color: azure;
+  border: 1px solid;
+  margin: 20px 20px 40px 20px;
+  box-shadow: 2px 4px 6px rgba(255, 255, 255, 0.2);
+}
+#attributes-subsection h3 {
+  height: 50px;
+}
+#attributes-subsection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#attributes-subsection figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+#attributes-subsection figcaption {
+  width: 100%;
+}
+.attributes-subsection-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0px 40px;
+  padding-bottom: 20px;
+}
+.content-container {
+  background-color: rgba(241, 243, 255, 0.1);
+  width: 320px;
+  height: 500px;
+  position: absolute;
+  transition: background-color 0.8s linear 0.2s;
+  display: flex;
+  align-items: flex-end;
+}
+.content-container:hover {
+  background-color: rgba(241, 243, 255, 0.7);
+}
+.text-container {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #202020;
+  opacity: 0;
+  transition: opacity 0.8s linear 0.2s;
+}
+.text-container:hover {
+  opacity: 1;
 }

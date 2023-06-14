@@ -44,9 +44,10 @@ header {
 nav ul {
   display: flex;
   align-items: center;
-  padding: 20px 40px;
+
   list-style-type: none;
   max-width: 100vw;
+  padding: 15px 40px;
 }
 nav ul li {
   margin-left: 15px;
@@ -54,6 +55,7 @@ nav ul li {
 }
 
 .nav-link {
+  font-size: 14px;
   text-decoration: none;
   color: #4b4b4e;
 }
@@ -61,12 +63,12 @@ nav ul li {
 .nav-link:hover {
   color: #b75151;
 }
-@media only screen and (max-width: 660px) {
+@media only screen and (min-width: 600px) {
   .nav-link {
-    font-size: 14px;
+    font-size: 16px;
   }
   nav ul {
-    padding: 15px 40px;
+    padding: 20px 40px;
   }
 }
 
@@ -90,7 +92,8 @@ nav ul li {
   position: relative;
 }
 .banner-text-container {
-  width: 50%;
+  width: 60%;
+
   position: absolute;
   z-index: 2;
   align-self: flex-end;
@@ -107,16 +110,17 @@ h1 {
 dl {
   color: white;
   text-align: right;
+  font-size: 14px;
 }
 dd a {
   color: #b75151;
 }
-@media only screen and (max-width: 660px) {
+@media only screen and (min-width: 600px) {
   dl {
-    font-size: 14px;
+    font-size: 16px;
   }
   .banner-text-container {
-    width: 60%;
+    width: 50%;
   }
 }
 

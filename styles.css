@@ -18,16 +18,32 @@ header {
   width: auto;
   max-width: 100%;
   height: auto;
-  margin: 0px 40px;
+  margin: 30px 40px;
 }
 .section-common-h2 {
-  padding: 70px 0px 30px 0px;
+  padding-block-start: 100px;
+  text-align: center;
 }
 
 #attributes h2 {
-  padding: 70px 0px 30px 40px;
+  padding-block-start: 80px;
+  padding-bottom: 20px;
   color: white;
+  text-align: center;
 }
+
+@media only screen and (min-width: 600px) {
+  .section-common-h2 {
+    padding-bottom: 30px;
+    text-align: left;
+  }
+  #attributes h2 {
+    text-align: left;
+    padding-left: 40px;
+    padding-bottom: 20px;
+  }
+}
+
 /* nav bar------------------------------------------------- */
 
 .nav-bar {
@@ -131,7 +147,7 @@ dd a {
 .infobox-overview {
   min-width: 300px;
   width: 300px;
-  margin: 0px 30px 30px 40px;
+  margin: 30px auto;
   border-radius: 3px;
   border: 1px solid #b5b7cf;
   background-color: #f1f2f6;
@@ -140,7 +156,7 @@ dd a {
   align-items: center;
   justify-content: center;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  float: left;
+  float: none;
 }
 
 .infobox-img {
@@ -184,6 +200,13 @@ dd a {
   width: 100%;
 }
 
+@media only screen and (min-width: 600px) {
+  .infobox-overview {
+    float: left;
+    margin: 0px 20px 20px 0px;
+  }
+}
+
 /* OVERVIEW SECTION ------------------------------------------------ */
 
 #overview-paragraphs h3 {
@@ -207,11 +230,14 @@ dd a {
 /* ATTRIBUTES SECTION ---------------------------- */
 #attributes {
   background-color: #202020;
+  padding: 20px 40px;
 }
-#attributes-subsection {
+.attributes-subsection-container {
   display: flex;
   justify-content: center;
-  color: #4b4b4e;
+  flex-wrap: wrap;
+}
+#attributes-subsection {
   width: 320px;
   height: 500px;
   border: 1px solid azure;
@@ -229,28 +255,18 @@ dd a {
 #attributes-subsection figure {
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: flex-end;
 }
 #attributes-subsection figcaption {
   width: 100%;
   height: 30%;
 }
-.attributes-subsection-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 0px 40px;
-  padding-bottom: 20px;
-}
+
 .content-container {
   background-color: rgba(241, 243, 255, 0.1);
   width: 320px;
   height: 500px;
   position: absolute;
   transition: background-color 0.8s linear 0.2s;
-  display: flex;
-  align-items: flex-end;
 }
 .content-container:hover {
   background-color: rgba(241, 243, 255, 0.7);
@@ -262,6 +278,7 @@ dd a {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  text-align: justify;
   padding: 20px;
   color: #202020;
   opacity: 0;

@@ -21,18 +21,22 @@ header {
   max-width: 100%;
 }
 
-.section-common {
+section:nth-child(odd) {
   width: auto;
   max-width: 100%;
   height: auto;
   margin: 30px 40px;
 }
-#section-common-h2-odd {
+section:nth-child(even) {
+  background-color: #202020;
+}
+
+section:nth-child(odd) h2 {
   padding-block-start: 100px;
   text-align: center;
 }
 
-#section-common-h2-even {
+section:nth-child(even) h2 {
   padding-block-start: 80px;
   padding-bottom: 20px;
   color: white;
@@ -40,11 +44,11 @@ header {
 }
 
 @media only screen and (min-width: 600px) {
-  #section-common-h2-odd {
+  section:nth-child(odd) h2 {
     padding-bottom: 30px;
     text-align: left;
   }
-  #section-common-h2-even {
+  section:nth-child(even) h2 {
     text-align: left;
     padding-left: 40px;
     padding-bottom: 20px;
@@ -258,10 +262,7 @@ dd a {
 }
 
 /* ATTRIBUTES SECTION ---------------------------- */
-#attributes {
-  background-color: #202020;
-  padding: 20px 40px;
-}
+
 .attributes-subsection-container {
   display: flex;
   justify-content: center;
@@ -326,15 +327,12 @@ dd a {
   margin: 20px 0px;
   width: 100%;
 }
-#on-screen-container {
+
+.on-screen-content-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0px 20px;
-}
-
-.on-screen-content-container {
-  margin: 40px 0px;
+  margin: 20px 40px;
 }
 .on-screen-content-container img {
   width: 100%;
@@ -359,25 +357,24 @@ dd a {
 /* IN COMICS SECTION ---------------------------- */
 
 #in-comics {
-  background-color: #202020;
   color: azure;
 }
 
 .in-comics-content-container {
   display: flex;
   justify-content: center;
+  margin: 20px 40px;
 }
 .in-comics-content-container figure {
   width: 80%;
   height: 80%;
-  margin: 40px;
 }
 
 .in-comics-content-container h3 {
   font-size: var(--font-size-large);
   font-style: italic;
   text-align: center;
-  padding: 20px 0px;
+  padding: 30px 0px;
 }
 
 .in-comics-content-container img {
